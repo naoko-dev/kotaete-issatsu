@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>こたえて、一冊 ｜ 答えるだけで、本になる</title>
+<meta name="description" content="8つの質問に答えるだけで、あなたの本のタイトル案・目次・書き出しの原稿ができあがります。ゴールドライフオンライン。">
+<meta name="theme-color" content="#F6F4EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23E24A12'/%3E%3Cpath d='M8 10.5c2.8-.9 5.4-.6 8 1.2 2.6-1.8 5.2-2.1 8-1.2V22c-2.8-.9-5.4-.6-8 1.2-2.6-1.8-5.2-2.1-8-1.2z' fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js"></script>
+<script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+
+<header class="site-head">
+  <a class="brand" href="./" aria-label="こたえて、一冊 トップへ">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M3.5 6.2c2.9-1 5.7-.7 8.5 1.3 2.8-2 5.6-2.3 8.5-1.3v12c-2.9-1-5.7-.7-8.5 1.3-2.8-2-5.6-2.3-8.5-1.3z"/><path d="M12 7.5v12"/></svg>
+    </span>
+    <span class="brand-name">こたえて、一冊<small>GOLD LIFE ONLINE</small></span>
+  </a>
+  <button class="btn btn-ink btn-sm" type="button" data-start>はじめる</button>
+</header>
+
+<!-- ============ 入口 ============ -->
+<main id="landing">
+
+  <section class="hero">
+    <div class="mosaic" id="mosaic" aria-hidden="true"></div>
+    <div class="hero-veil" aria-hidden="true"></div>
+
+    <div class="hero-copy">
+      <p class="badge"><i aria-hidden="true"></i>約10分・8つの質問に答えるだけ</p>
+      <h1 class="hero-title">答えるだけで、<br><em>本になる。</em></h1>
+      <p class="hero-lead">書きたいことはあるのに、1行目が出てこない。<br class="pc">そんな方に、編集者のように質問します。<br class="pc">答え終わると、あなたの本のタイトル案・目次・<br class="pc">書き出しの原稿ができあがります。</p>
+      <div class="hero-actions">
+        <button class="btn btn-shu" type="button" data-start>はじめる<svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5"/></svg></button>
+        <a class="btn btn-paper" href="#how">しくみを見る</a>
+      </div>
+      <ul class="stats">
+        <li>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+          <b>8つの質問</b><span>選ぶだけの質問が中心</span>
+        </li>
+        <li>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="7.5"/><path d="M12 9.5V13l2.5 1.8M9.5 2.8h5"/></svg>
+          <b>約10分</b><span>途中でやめても大丈夫</span>
+        </li>
+        <li>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h10.5a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h10.5"/></svg>
+          <b>3つの原稿</b><span>タイトル案・目次・冒頭</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2 class="h2">こたえて、一冊の<em>3</em>つのステップ</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="step-art art-q" aria-hidden="true">
+            <div class="mini-card back"></div>
+            <div class="mini-card">
+              <span class="mini-label">質問 1</span>
+              <span class="mini-q">どんな本を書きたいですか。</span>
+              <span class="mini-opt on">自分史・回想録</span>
+              <span class="mini-opt">エッセイ・日々の暮らし</span>
+            </div>
+          </div>
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.2 9a3 3 0 1 1 4.1 2.8c-.8.3-1.3 1-1.3 1.9v.6"/><circle cx="12" cy="17.6" r=".4"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div class="step-body">
+            <p class="step-num">STEP 01</p>
+            <h3>質問に、答える</h3>
+            <p>「どんな本を」「誰に読んでほしいか」。ほとんどは選ぶだけ。書く質問は2つだけです。</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-art art-genko" aria-hidden="true">
+            <div class="genko"><span>開店して<i class="tcy">3</i>日目、</span><span>ひとりも来なかった。</span><span><i class="tcy">19</i>時に暖簾を</span></div>
+          </div>
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.5 4.5 19.5 9.5 9 20H4v-5z"/><path d="M12.5 6.5l5 5"/></svg></span>
+          <div class="step-body">
+            <p class="step-num">STEP 02</p>
+            <h3>編集者のように、まとめる</h3>
+            <p>いただいた答えから、本の骨組みと書き出しを組み立てます。1分ほどで書き上がります。</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-art art-book" aria-hidden="true">
+            <div class="book3d"><span class="b-title">喫茶　あかり</span><span class="b-au">小田野 直子</span></div>
+          </div>
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5h10.5a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h10.5"/></svg></span>
+          <div class="step-body">
+            <p class="step-num">STEP 03</p>
+            <h3>本の、はじまりを手に</h3>
+            <p>タイトル案・目次・冒頭の原稿ができあがります。そのまま保存して、書き足していけます。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sample-sec">
+    <div class="wrap sample">
+      <div class="sample-copy">
+        <p class="eyebrow">SAMPLE</p>
+        <h2 class="h2">たとえば、<br>こんな一冊の<br><em>はじまり</em>に。</h2>
+        <p class="muted">「40代で始めた喫茶店のこと」と答えた方の例です。<br>ご自分の答えから、ご自分だけの構成案ができあがります。</p>
+      </div>
+      <div class="sample-paper">
+        <p class="sp-label">タイトル案</p>
+        <p class="sp-title">暖簾をしまう、その前に</p>
+        <p class="sp-label">目次</p>
+        <ol class="sp-toc">
+          <li><b>第1章</b>雨の日の、2名さま</li>
+          <li><b>第2章</b>40歳の、開業届</li>
+          <li><b>第3章</b>常連さんという家族</li>
+        </ol>
+        <p class="sp-label">冒頭</p>
+        <p class="sp-body">開店して3日目、店にはひとりのお客さんも来なかった。19時、あきらめて暖簾に手をかけたとき、傘をさした近所のご婦人が2名、「まだ、いいかしら」と入ってきた――。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section promise-sec">
+    <div class="wrap">
+      <ul class="promise">
+        <li><b>保存しません</b><span>答えも原稿も、どこにも残しません</span></li>
+        <li><b>あなたにだけ</b><span>できた原稿は、この画面にだけ表示</span></li>
+        <li><b>登録いりません</b><span>お名前もメールも、なしで使えます</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section cta-sec">
+    <div class="cta-block">
+      <h2>さあ、最初の質問から。</h2>
+      <p>答えるのは8問。選ぶだけの質問がほとんどです。</p>
+      <button class="btn btn-white" type="button" data-start>はじめる<svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5"/></svg></button>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 質問 ============ -->
+<main id="flow" hidden>
+  <div class="flow-wrap">
+    <div class="flow-top">
+      <p class="flow-count"><span>質問</span> <b id="qNum">1</b><span class="of">/ <span id="qTotal">8</span></span></p>
+      <ol class="flow-steps" id="flowSteps" aria-hidden="true"></ol>
+    </div>
+
+    <form class="qcard" id="qcard" autocomplete="off">
+      <p class="q-label" id="qLabel">質問 1</p>
+      <h1 class="q-text" id="qText"></h1>
+      <p class="q-hint" id="qHint"></p>
+      <div class="choices" id="choices" role="radiogroup"></div>
+      <div class="freewrap" id="freewrap"></div>
+      <p class="q-optional" id="qOptional" hidden>この質問は、答えなくても先へ進めます。</p>
+    </form>
+
+    <nav class="flow-nav">
+      <button class="btn btn-paper" type="button" id="backBtn">もどる</button>
+      <button class="btn btn-shu" type="button" id="nextBtn">次へ<svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5"/></svg></button>
+    </nav>
+  </div>
+</main>
+
+<!-- ============ 結果 ============ -->
+<main id="result" hidden>
+  <div class="result-wrap">
+    <div class="result-head">
+      <p class="eyebrow" id="resultEyebrow">WRITING</p>
+      <h1 class="h2" id="resultTitle">あなたの本を、<em>書いています。</em></h1>
+      <p class="status" id="status"><span class="pen-dots" aria-hidden="true"><i></i><i></i><i></i></span><span id="statusText">いただいたお話を読んでいます</span></p>
+      <p class="demo-note" id="demoNote" hidden>いまは見本の文章を表示しています（AIにつなぐ前の確認用です）。</p>
+    </div>
+
+    <section class="r-sec" id="secTitles" hidden>
+      <h2 class="r-h">タイトル案</h2>
+      <ul class="covers" id="titlesList"></ul>
+    </section>
+
+    <section class="r-sec" id="secToc" hidden>
+      <h2 class="r-h">目次</h2>
+      <ol class="toc" id="tocList"></ol>
+    </section>
+
+    <section class="r-sec" id="secBody" hidden>
+      <div class="r-h-row">
+        <h2 class="r-h">冒頭の原稿</h2>
+        <button class="toggle" type="button" id="vertBtn" aria-pressed="false">縦書きで読む</button>
+      </div>
+      <div class="manuscript" id="manuscript"><p id="bodyText"></p></div>
+    </section>
+
+    <p class="gen-err" id="genErr" role="alert" hidden></p>
+
+    <div class="result-actions" id="resultActions" hidden>
+      <button class="btn btn-shu" type="button" id="saveBtn">テキストで保存<svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3.5v10M5.5 9.5 10 14l4.5-4.5M4 16.5h12"/></svg></button>
+      <button class="btn btn-paper" type="button" id="regenBtn">もう一度つくる</button>
+      <button class="btn btn-quiet" type="button" id="restartBtn">最初からやり直す</button>
+    </div>
+
+    <aside class="consult" id="consult" hidden>
+      <div>
+        <p class="eyebrow on-dark">NEXT</p>
+        <h2>この構成案から、<br>本にしませんか。</h2>
+        <p>編集者が、続きの書き方からご相談にのります。構成案をお持ちいただくと、打ち合わせがぐっと早く進みます。</p>
+      </div>
+      <a class="btn btn-shu" id="consultBtn" href="#">出版の相談をする（無料）<svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5"/></svg></a>
+    </aside>
+
+    <p class="fine">できあがった原稿は、書きはじめるための叩き台です。事実と違うところは、ご自由に直してお使いください。入力した内容と原稿は保存されません。</p>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <a href="https://renaissance-media.jp/" target="_top">ゴールドライフオンライン</a>
+  <span>© 2026 GOLD LIFE ONLINE</span>
+</footer>
+
+</body>
+</html>
