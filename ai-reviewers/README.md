@@ -8,14 +8,18 @@ ai-reviewers/
   takeuchi-san/
     instructions.md       指示書（人物像・判断基準・話し方・返答の形）
     feedback-history.md   本人の過去コメント（原文）。判断のよりどころ
+  kouseisha/
+    instructions.md       校正者AIの指示書（点検項目・数字の照合・返答の形）
+    settei-hyo-template.md  作品ごとの設定表のひな形。校正者AIが照合する「正解」
 .claude/agents/
   takeuchi-san-ai.md      Claude Code から呼び出すための入口
+  kouseisha-ai.md
 ```
 
 | 名前 | 立場 | フォルダ |
 |---|---|---|
 | 竹内さんAI | 上司（AI小説の編集責任者） | `takeuchi-san/` |
-| （2人目） | | |
+| 校正者AI | 連載小説の校正者（つながり・設定の矛盾・数字の照合） | `kouseisha/` |
 
 ## 使い方
 
@@ -33,6 +37,14 @@ ai-reviewers/
 > 竹内さんAIに `原稿/第4弾.md` を講評してもらって
 
 のように頼むと、`takeuchi-san-ai` が指示書と過去コメントを読んでから原稿を講評します。
+
+### 校正者AIをプロジェクトで使う
+
+1. 新しいプロジェクトを作る（名前：校正者AI）
+2. 「指示」に `kouseisha/instructions.md` の中身を全文貼り付ける
+3. 「コンテキスト」に、作品ごとの **設定表**（`settei-hyo-template.md` を埋めたもの）と、**確定した各回の原稿** を追加する
+4. チャットに点検したい回の原稿を貼り、「第◯回を校正してください（最終回ではない）」と頼む
+5. 1話確定するたびに、設定表を書き足し、確定原稿をコンテキストに追加する
 
 ## 育て方
 
