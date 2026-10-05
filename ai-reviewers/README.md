@@ -14,6 +14,10 @@ ai-reviewers/
 .claude/agents/
   takeuchi-san-ai.md      Claude Code から呼び出すための入口
   kouseisha-ai.md
+ai-reviewers/henshu-chat/
+  instructions.md         ★2人を同じチャットで動かす指示書（build.sh で自動生成）
+  header.md               振り分けルール（誰が答えるか・意見がぶつかったとき・書き直し）
+  build.sh                header.md＋2人の指示書をつなげて instructions.md を作る
 ```
 
 | 名前 | 立場 | フォルダ |
@@ -22,6 +26,16 @@ ai-reviewers/
 | 校正者AI | 連載小説の校正者（つながり・設定の矛盾・数字の照合） | `kouseisha/` |
 
 ## 使い方
+
+### ★おすすめ：2人を同じチャットで動かす（プロジェクト「AI小説 編集チャット」）
+
+1. 新しいプロジェクトを作る（または竹内さんAIのプロジェクトを使い回す）
+2. 「指示」に `henshu-chat/instructions.md` を全文貼り付ける
+3. 「コンテキスト」に、`takeuchi-san/feedback-history.md`、作品の設定表、確定した各回の原稿を入れる
+4. 原稿を貼るだけで、校正者AI → 竹内さんAI の順で両方が答える。「校正して」なら校正者AIだけ、「竹内さん、どう？」なら竹内さんAIだけ、「書き直して」なら2人の指摘を反映して書き直す
+
+どちらかの指示書を直したら、`sh ai-reviewers/henshu-chat/build.sh` で `instructions.md` を作り直し、プロジェクトの「指示」も貼り替える。
+
 
 ### A. Claude（claude.ai）の「プロジェクト」で使う ― いちばん手軽
 
