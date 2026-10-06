@@ -1,7 +1,7 @@
 # こたえて、一冊
 
 質問に答えていくと、本の「タイトル案・目次・冒頭原稿」ができあがるサイトです。
-GLO（ゴールドライフオンライン）の読者向け。企画の背景は [docs/HANDOFF-kotaete-issatsu.md](docs/HANDOFF-kotaete-issatsu.md) を参照。
+GLO（ゴールドライフオンライン）の読者向け。
 
 ビルド不要の静的サイトです（HTML / CSS / JavaScript のみ）。GitHub Pages にそのまま置けます。
 

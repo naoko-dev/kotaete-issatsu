@@ -15,7 +15,7 @@
     { "id": "q7", "text": "どんな語り口がお好きですか。", "hint": "文章の温度が変わります。", "type": "choice", "required": true,
       "choices": ["やわらかく、語りかけるように", "淡々と、静かに", "ユーモアをまじえて", "情景をていねいに描いて"], "example": "" },
     { "id": "q8", "text": "お名前、またはペンネームは。", "hint": "表紙に入るお名前です。あとで変えられます。", "type": "line", "required": false,
-      "choices": [], "example": "例：小田野 直子" }
+      "choices": [], "example": "例：月川 みのり" }
   ],
   "output": {
     "chapters": 6,
