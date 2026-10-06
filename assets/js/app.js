@@ -16,7 +16,7 @@ const FALLBACK = {
     { id: "q5", text: "そのとき、どう感じましたか。", hint: "答えなくても、先へ進めます。", type: "para", required: false, choices: [], example: "例：ありがたいより先に、これで明日も店を開けられる、と思った。" },
     { id: "q6", text: "読んだ人に、何を持ち帰ってほしいですか。", hint: "本の芯になるところです。", type: "choice", required: true, choices: ["そんな時代があったと、知ってほしい", "あなたは一人じゃない、と伝えたい", "笑って、元気になってほしい", "ただ、覚えていてほしい"], example: "" },
     { id: "q7", text: "どんな語り口がお好きですか。", hint: "文章の温度が変わります。", type: "choice", required: true, choices: ["やわらかく、語りかけるように", "淡々と、静かに", "ユーモアをまじえて", "情景をていねいに描いて"], example: "" },
-    { id: "q8", text: "お名前、またはペンネームは。", hint: "表紙に入るお名前です。あとで変えられます。", type: "line", required: false, choices: [], example: "例：小田野 直子" }
+    { id: "q8", text: "お名前、またはペンネームは。", hint: "表紙に入るお名前です。あとで変えられます。", type: "line", required: false, choices: [], example: "例：月川 みのり" }
   ],
   output: { chapters: 6, openingChars: 1000, extra: "" }
 };
